@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>List of Repositories Name</h1>
+<div mat-dialog-content>
+  <ul>
+    <li *ngFor="let inData of data">
+      <table style="overflow-inline: scroll;">
+        <tr>
+          <td>{{inData.name}}</td>
+        </tr>
+      </table>
+    </li>
+  </ul>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close] cdkFocusInitial>
+    Ok
+  </button>
+</div>
+
+<!-- <div *ngFor="let inData of data">{{inData.name}}</div> -->
