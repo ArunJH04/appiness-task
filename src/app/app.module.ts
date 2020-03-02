@@ -54,18 +54,12 @@ import {
   UserListComponent,
   DialogRepoList
 } from "./user-list/user-list.component";
-import { RepoListComponent } from "./repo-list/repo-list.component";
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
 import { HttpClientModule } from "@angular/common/http";
 
 import { Service } from "./service";
 @NgModule({
-  declarations: [
-    AppComponent,
-    UserListComponent,
-    RepoListComponent,
-    DialogRepoList
-  ],
+  declarations: [AppComponent, UserListComponent, DialogRepoList],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
